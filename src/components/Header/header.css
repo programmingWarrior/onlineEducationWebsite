@@ -11,15 +11,15 @@
 .nav{
     text-align:left;
     background-color:black;
-    line-height: 40px;
+    line-height: 20px;
 }
 .nav a{
     color:white;
     text-decoration: none;
-    margin:10px;
-    padding:10px;
+    padding:15px;
     font-weight:500;
 }
 .nav a:hover{
     background-color:lightgray;
+    text-decoration:none;
 }
