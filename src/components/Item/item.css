@@ -18,7 +18,7 @@
     font-weight: 500;
 }
 .item-other .btn{
-    background-color:#2A73CC;
+    /* background-color:#2A73CC;
     color:white;
     padding:5px 0px;
     font-size:15px;
@@ -27,6 +27,6 @@
     border-radius:5px;
     margin-bottom:10px;
     margin-top:-10px;
-    border:1px solid lightgray;
+    border:1px solid lightgray; */
     cursor:pointer;
 }

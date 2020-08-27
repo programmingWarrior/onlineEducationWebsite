@@ -3,6 +3,7 @@ import './item.css';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { Button } from 'react-bootstrap';
 
 const Item = (props) => {
     
@@ -21,7 +22,7 @@ const Item = (props) => {
                 <p><small>Google</small></p>
                 <p>{address}</p>
                 <p className='price'>${price}</p>
-                <button onClick={() => props.handler(props.name)}className="btn" >{element} Enrolled Now</button>
+                <button  onClick={() => props.handler(props.name)}className="btn btn-success" >{element} Enrolled Now</button>
 
             </div>
         </div>
