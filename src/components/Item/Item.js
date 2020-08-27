@@ -21,7 +21,7 @@ const Item = (props) => {
                 <p><small>Google</small></p>
                 <p>{address}</p>
                 <p className='price'>${price}</p>
-                <button onClick={() => props.handler(props.course)}className="btn" >{element} Enrolled Now</button>
+                <button onClick={() => props.handler(props.name)}className="btn" >{element} Enrolled Now</button>
 
             </div>
         </div>
