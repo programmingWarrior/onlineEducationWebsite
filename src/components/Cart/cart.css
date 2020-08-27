@@ -1,5 +1,9 @@
 
 .cart .headline,.price{
     color:salmon;
-
+    border-bottom:5px solid tomato;
+}
+.count, .price{
+    font-size:20px;
+    font-weight: 500;
 }
