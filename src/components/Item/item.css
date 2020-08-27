@@ -1,0 +1,32 @@
+.items-total{
+    display:flex;
+    border-bottom:1px solid lightgray;
+    margin:10px;
+}
+.item-img img{
+    
+    width:180px;
+    height:200px;
+    margin:10px;
+}
+.item-other{
+    margin-left:10px;
+    font-size:200;
+}
+.item-other .price{
+    font-size:20px;
+    font-weight: 500;
+}
+.item-other .btn{
+    background-color:#2A73CC;
+    color:white;
+    padding:5px 0px;
+    font-size:15px;
+    font-weight: 500;
+    width:150px;
+    border-radius:5px;
+    margin-bottom:10px;
+    margin-top:-10px;
+    border:1px solid lightgray;
+    cursor:pointer;
+}

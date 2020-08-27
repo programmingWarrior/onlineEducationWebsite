@@ -1,17 +1,43 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import fakeData from '../../fakeData';
+import './course.css';
+import Item from '../Item/Item';
+import Cart from '../Cart/Cart';
 const Course = () => {
-    const first10 = fakeData.slice(0,10);
-    const [products,setProduct] = useState(first10);
+    const first15 = fakeData.slice(0,15);
+    const [course,setCourse] = useState(first15);
     
-   
-    console.log(first10);
+    
+    const [cart,setCart] = useState([]);
+    
+    
+    const handleEnrolledCourse = (course) => {
+        
+        const newCart = [...cart, course];
+        setCart(newCart);
+        
+    };
+    
     
     return (
-        <div>
+        <div className="header">
             
-    <h1>Course:{products.length}</h1>
+            
+            <div className="courses-container">
+               
+              
+                  {course.map((item)=><Item handler={handleEnrolledCourse} name={item}></Item>)} ;
+                  
+              
+                
+            </div>
+
+            <div className="cart-container">
+                <Cart cart={cart}></Cart>
+            </div>
+
+
              
 
             
